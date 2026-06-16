@@ -1,41 +1,41 @@
 {
   "id": "custom-business",
-  "name": "Mock Premium Business",
-  "companyName": "Mock Premium Business Co",
-  "tagline": "Accelerating enterprise delivery with custom methods",
-  "description": "Our custom corporate layout is dynamically injected by the generative platform.",
-  "supportEmail": "contact@mockpremium.com",
-  "phone": "+1 (555) 019-2834",
-  "address": "123 Main St, Suite 100, New York, NY",
+  "name": "Apex Innovations",
+  "companyName": "Apex Innovations",
+  "tagline": "We build modern software solutions that drive growth.",
+  "description": "We build modern software solutions that drive growth.",
+  "supportEmail": "info@apexinnovations.com",
+  "phone": "+1 512 555 0199",
+  "address": "100 Congress Ave, Austin, TX 78701",
   "logoIcon": "Sparkles",
   "theme": {
-    "primaryBg": "bg-[#4b2a89]",
+    "primaryBg": "bg-[#2C5D63]",
     "primaryHover": "hover:opacity-90",
-    "textAccent": "text-[#4b2a89]",
+    "textAccent": "text-[#2C5D63]",
     "bgLight": "bg-slate-50",
-    "badgeBg": "bg-[#4b2a89]/10 text-[#4b2a89] border-[#4b2a89]/20",
-    "gradientFrom": "from-[#4b2a89]",
-    "gradientTo": "to-[#1a9b4c]",
-    "ringFocus": "focus:ring-[#4b2a89]",
+    "badgeBg": "bg-[#2C5D63]/10 text-[#2C5D63] border-[#2C5D63]/20",
+    "gradientFrom": "from-[#2C5D63]",
+    "gradientTo": "to-teal-500",
+    "ringFocus": "focus:ring-[#2C5D63]",
     "fontClass": "font-sans",
-    "logoColor": "text-[#4b2a89]",
+    "logoColor": "text-[#2C5D63]",
     "cardRounding": "rounded-xl"
   },
   "services": [
     {
       "id": "1",
-      "title": "Custom Integration Testing",
-      "description": "Dynamic evaluation.",
+      "title": "Web Development",
+      "description": "Custom React websites built to scale your business.",
       "icon": "Sparkles"
     }
   ],
   "testimonials": [
     {
       "id": "1",
-      "name": "Alex Smith",
+      "name": "Happy Customer",
       "role": "Verified Customer",
-      "quote": "Breathtaking design.",
-      "avatar": "https://ui-avatars.com/api/?name=Alex+Smith&background=A2C11C&color=283739"
+      "quote": "Great service!",
+      "avatar": "https://ui-avatars.com/api/?name=Happy%20Customer&background=A2C11C&color=283739"
     }
   ]
 }
