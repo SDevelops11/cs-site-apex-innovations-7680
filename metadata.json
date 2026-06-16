@@ -1,0 +1,6 @@
+{
+  "name": "Enterprise Hub",
+  "description": "A premium enterprise portal featuring robust architecture, services showcase, and interactive contact functionality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

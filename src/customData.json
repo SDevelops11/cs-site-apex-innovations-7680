@@ -1,0 +1,41 @@
+{
+  "id": "custom-business",
+  "name": "Mock Premium Business",
+  "companyName": "Mock Premium Business Co",
+  "tagline": "Accelerating enterprise delivery with custom methods",
+  "description": "Our custom corporate layout is dynamically injected by the generative platform.",
+  "supportEmail": "contact@mockpremium.com",
+  "phone": "+1 (555) 019-2834",
+  "address": "123 Main St, Suite 100, New York, NY",
+  "logoIcon": "Sparkles",
+  "theme": {
+    "primaryBg": "bg-[#4b2a89]",
+    "primaryHover": "hover:opacity-90",
+    "textAccent": "text-[#4b2a89]",
+    "bgLight": "bg-slate-50",
+    "badgeBg": "bg-[#4b2a89]/10 text-[#4b2a89] border-[#4b2a89]/20",
+    "gradientFrom": "from-[#4b2a89]",
+    "gradientTo": "to-[#1a9b4c]",
+    "ringFocus": "focus:ring-[#4b2a89]",
+    "fontClass": "font-sans",
+    "logoColor": "text-[#4b2a89]",
+    "cardRounding": "rounded-xl"
+  },
+  "services": [
+    {
+      "id": "1",
+      "title": "Custom Integration Testing",
+      "description": "Dynamic evaluation.",
+      "icon": "Sparkles"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Alex Smith",
+      "role": "Verified Customer",
+      "quote": "Breathtaking design.",
+      "avatar": "https://ui-avatars.com/api/?name=Alex+Smith&background=A2C11C&color=283739"
+    }
+  ]
+}
