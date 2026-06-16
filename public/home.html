@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Innovations - Software Consulting in Austin, TX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #1a202c; /* Dark base for contrast */
+            color: #e2e8f0; /* Light text */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg-hero {
+            background: linear-gradient(to right top, #2C5D63, #1A4045, #0f2c2f); /* Gradient from brand color to darker */
+        }
+        .gradient-bg-section {
+            background: linear-gradient(to bottom right, #1A4045, #2C5D63);
+        }
+        .btn-primary {
+            background-color: #2C5D63;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+        }
+        .btn-primary:hover {
+            background-color: #3e7f87; /* Slightly lighter on hover */
+            transform: translateY(-2px);
+        }
+        .card-bg {
+            background-color: #2D3748; /* Slightly lighter dark for cards */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-bg:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .scroll-to-contact {
+            scroll-behavior: smooth;
+        }
+        /* Custom styles for dark theme */
+        .dark-theme-text {
+            color: #e2e8f0;
+        }
+        .dark-theme-bg {
+            background-color: #1a202c;
+        }
+        .dark-theme-card {
+            background-color: #2D3748;
+        }
+        @keyframes bounce-custom {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+        .animate-bounce-custom {
+            animation: bounce-custom 1.5s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="scroll-to-contact">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white shadow-lg py-4 fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href="#home" class="text-3xl font-bold text-[#2C5D63] tracking-wider">Apex Innovations</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-[#2C5D63] transition duration-300">Home</a>
+                <a href="#services" class="hover:text-[#2C5D63] transition duration-300">Services</a>
+                <a href="#testimonials" class="hover:text-[#2C5D63] transition duration-300">Testimonials</a>
+                <a href="#contact" class="hover:text-[#2C5D63] transition duration-300">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-center py-4">
+            <a href="#home" class="block py-2 text-lg hover:bg-gray-700 transition duration-300">Home</a>
+            <a href="#services" class="block py-2 text-lg hover:bg-gray-700 transition duration-300">Services</a>
+            <a href="#testimonials" class="block py-2 text-lg hover:bg-gray-700 transition duration-300">Testimonials</a>
+            <a href="#contact" class="block py-2 text-lg hover:bg-gray-700 transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg-hero min-h-screen flex items-center justify-center text-white py-24 px-6 md:px-0">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight dark-theme-text">Apex Innovations</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto dark-theme-text">We build modern software solutions that drive growth.</p>
+            <a href="#contact" class="btn-primary text-lg animate-bounce-custom">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="dark-theme-bg py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 dark-theme-text">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Service Card 1 -->
+                <div class="card-bg rounded-lg shadow-xl p-8 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-3xl font-semibold mb-4 text-[#2C5D63]">Web Development</h3>
+                    <p class="text-gray-300">Custom React websites built to scale your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="gradient-bg-section py-20 px-6 text-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 dark-theme-text">What Our Clients Say</h2>
+            <div class="max-w-2xl mx-auto bg-gray-800 bg-opacity-70 rounded-lg shadow-xl p-10 relative overflow-hidden transition duration-500 hover:scale-[1.02]">
+                <p class="text-xl md:text-2xl italic text-gray-200 mb-6 text-center">"Great service!"</p>
+                <p class="text-lg font-semibold text-right text-[#2C5D63]">- Happy Customer</p>
+                <svg class="absolute top-4 left-4 w-12 h-12 text-gray-600 opacity-30" fill="currentColor" viewBox="0 0 24 24"><path d="M9.277 10.155c-.752-.51-1.332-.977-1.602-1.55-.237-.487-.27-1.015-.27-1.468 0-.877.34-1.666 1.056-2.228.69-.548 1.63-.82 2.684-.82 1.343 0 2.238.406 2.685 1.218.428.784.428 1.862 0 3.235-.447 1.373-.895 2.185-1.343 2.438-.49.27-.996.406-1.518.406-.895 0-1.63-.228-2.203-.687zm8.397 0c-.752-.51-1.332-.977-1.602-1.55-.237-.487-.27-1.015-.27-1.468 0-.877.34-1.666 1.056-2.228.69-.548 1.63-.82 2.684-.82 1.343 0 2.238.406 2.685 1.218.428.784.428 1.862 0 3.235-.447 1.373-.895 2.185-1.343 2.438-.49.27-.996.406-1.518.406-.895 0-1.63-.228-2.203-.687z"/></svg>
+                <svg class="absolute bottom-4 right-4 w-12 h-12 text-gray-600 opacity-30 rotate-180" fill="currentColor" viewBox="0 0 24 24"><path d="M9.277 10.155c-.752-.51-1.332-.977-1.602-1.55-.237-.487-.27-1.015-.27-1.468 0-.877.34-1.666 1.056-2.228.69-.548 1.63-.82 2.684-.82 1.343 0 2.238.406 2.685 1.218.428.784.428 1.862 0 3.235-.447 1.373-.895 2.185-1.343 2.438-.49.27-.996.406-1.518.406-.895 0-1.63-.228-2.203-.687zm8.397 0c-.752-.51-1.332-.977-1.602-1.55-.237-.487-.27-1.015-.27-1.468 0-.877.34-1.666 1.056-2.228.69-.548 1.63-.82 2.684-.82 1.343 0 2.238.406 2.685 1.218.428.784.428 1.862 0 3.235-.447 1.373-.895 2.185-1.343 2.438-.49.27-.996.406-1.518.406-.895 0-1.63-.228-2.203-.687z"/></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="dark-theme-bg py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-10 dark-theme-text">Ready to Drive Growth?</h2>
+            <p class="text-xl mb-12 max-w-xl mx-auto text-gray-300">Contact us today to discuss your software needs and schedule a consultation.</p>
+            <a href="mailto:info@apexinnovations.com" class="btn-primary text-lg mb-10 inline-block">Book an Appointment</a>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto">
+                <div class="dark-theme-card p-6 rounded-lg shadow-md transition duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-semibold mb-3 text-[#2C5D63]">Email Us</h3>
+                    <p><a href="mailto:info@apexinnovations.com" class="text-gray-300 hover:text-white transition duration-300">info@apexinnovations.com</a></p>
+                </div>
+                <div class="dark-theme-card p-6 rounded-lg shadow-md transition duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-semibold mb-3 text-[#2C5D63]">Call Us</h3>
+                    <p><a href="tel:+15125550199" class="text-gray-300 hover:text-white transition duration-300">+1 512 555 0199</a></p>
+                </div>
+                <div class="dark-theme-card p-6 rounded-lg shadow-md transition duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-semibold mb-3 text-[#2C5D63]">Visit Us</h3>
+                    <p class="text-gray-300">100 Congress Ave, Austin, TX 78701</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 px-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Apex Innovations. All rights reserved.</p>
+            <p class="mt-2 text-sm">Made with <span class="text-red-500">&hearts;</span> in Austin, TX</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                if (window.innerWidth < 768) {
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        document.getElementById('menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
